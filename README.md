@@ -7,10 +7,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Run Project
-git clone https://github.com/tomastrajan/angular-ngrx-material-starter.git new-project
-cd new-project
-npm install
-npm start
+git clone https://github.com/tomastrajan/NewsFeed-Reddit.git new-project
+`cd new-project`
+`npm install`
+`npm start`
 
 ## Build
 

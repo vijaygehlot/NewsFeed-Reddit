@@ -1,0 +1,26 @@
+<div class="items">
+    <div class="col-md-12 col-lg-9">
+        <div class="item" *ngFor="let post of listOfPosts | paginate: {itemsPerPage:5 , currentPage: p} ">
+            <div class="col-md-2 col-lg-1 col-sm-2 item__post">
+                <p class="item__votes">Votes:</p>
+                <p class="item__post-votes">{{post.ups}}</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-4">
+                <a href="{{getUrl(post)}}">
+                    <img class="item__thumbnail" [src]="post.thumbnail" alt="Not Updated"></a>
+            </div>
+            <div class="col-md-7 col-lg-9 col-sm-6 item__content">
+                <div>
+                    <a href="{{getUrl(post)}}">
+                        <p class="item__title" style="color: black">{{post.title}}</p>
+                    </a>
+                </div>
+                <div class="item__comment">
+                    <a href="{{getUrl(post)}}">Comments: {{post.num_comments}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<pagination-controls (pageChange)="p =$event"></pagination-controls>

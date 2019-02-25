@@ -1,0 +1,20 @@
+<div class="app__header">
+    <header>
+        <div class="container header__container">
+
+            <h1 align="center" class="app__title">Reddit News Feed Listings</h1>
+
+
+        </div>
+    </header>
+</div>
+<nav class="app__nav">
+    <div class="container">
+        <button type="button" class="btn btn-danger" [routerLink]="['/newest']">Latest News</button>
+        <button type="button" class="btn btn-primary" [routerLink]="['/most-commented']">Most Commented</button>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

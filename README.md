@@ -9,9 +9,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Run Project
 git clone https://github.com/tomastrajan/NewsFeed-Reddit.git new-project
-`cd new-project`
+`cd NewsFeed-Reddit`
 `npm install`
-`npm start`
+`npm serve`
 
 ## Build
 
